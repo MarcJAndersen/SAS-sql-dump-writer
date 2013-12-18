@@ -1,0 +1,7 @@
+# assuming prefixes are set
+
+SELECT (AVG(?Age) as ?mean) (COUNT(*) as ?n)
+WHERE {
+?row rdf:type vocab:DM ;
+ vocab:DM_AGE ?Age.
+}

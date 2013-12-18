@@ -1,0 +1,8 @@
+# assuming prefixes are set
+
+SELECT DISTINCT ?Sex (count(*) as ?Count)
+WHERE {
+?row rdf:type vocab:DM;
+ vocab:DM_SEX ?Sex .
+}
+GROUP BY ?Sex
